@@ -1,0 +1,450 @@
+/* Importar letras Open+Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* Selector Universal */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Body */
+body{
+	font-family: 'Open Sans';
+}
+
+/* Header */
+header{
+	background-color: #f2f2f2;
+	text-align: center;
+	padding: 10px;
+}
+
+/* Menu */
+.menu{
+    background-color: #f2f2f2;
+}
+
+/* Menu ul */
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 20px 30px;
+}
+
+/* MEnu lista */
+.menu li{
+    display: inline;
+    margin: 0;
+}
+
+/* Menu lista link*/
+.menu li a{
+    color: rgb(20, 20, 20);
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+/* Menu mouse sobre el link */
+.menu li a:hover{
+    background-color: #5252b4;
+    color: white;
+    border-radius: 50px;
+}
+
+/* Maxima resolución 650px */
+@media screen and (max-width: 650px){
+    .menu ul{
+        padding: 0;
+    }
+    .menu ul li{
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .menu li a{
+        display: list-item;
+    }
+}
+
+/* Maxima resolución 480px */
+@media screen and (max-width: 480px){
+    .menu ul li{
+        width: 100%;
+    }
+}
+
+/* Indicar el Menu Acticado */
+.activo {
+    font-weight: 600;
+}
+
+/* Encabezado */
+.encabezado-img{
+	background-size: cover;
+	height: 450px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	opacity: 1k;
+}
+
+/* Encabezado etiquta p*/
+.encabezado-img p{
+	font-size: 18px;
+}
+
+/* Encabezado etiqueta h1*/
+.encabezado-img h1{
+	font-size: 50px;
+	padding: 15px 0;
+
+}
+
+/* Contenido tarjetas de Trailers */
+.container-card{
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
+}
+
+/* Titulo de tarjetas de Trailers */
+.title-cards{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 20px;
+	margin-top: 20px;
+	text-align: center;
+	color: #7a7a7a;
+}
+
+/* Tarjetas de Trailers */
+.card{
+	width: 100%;
+	margin: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#fff;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+
+/* Mouse sobre Tarjetas de Trailers*/
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+
+/* Imagenes de Tarjetas de Trailers*/
+.card img{
+	width: 100%;
+	height: 400px;
+}
+
+/* Contenido de Tarjetas de Trailers */
+.card .contenido-card{
+	padding: 15px;
+	text-align: center;
+}
+
+/* Etiqueta h3 de Tarjetas de Trailers */
+.card .contenido-card h3{
+	margin-bottom: 15px;
+	color: #7a7a7a;
+}
+
+/* Etiqueta p de Tarjetas de Trailers */
+.card .contenido-card p{
+	line-height: 1.8;
+	color: #6a6a6a;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+/* Boton de Tarjetas de Trailers */
+.card .contenido-card a{
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: #5252b4;
+	border: 1px solid #5252b4;
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+}
+
+/* Mouse sobre el Boton Tarjetas de Trailers */
+.card .contenido-card a:hover{
+	background: #5252b4;
+	color: #fff;
+}
+
+/* Resolución de pantalla entre 320px y 768px*/
+@media only screen and (min-width:320px) and (max-width:768px){
+	.container-card{
+		flex-wrap: wrap;
+	}
+	.card{
+		margin: 15px;
+	}
+}
+/*Fin-Cards*/
+
+/* Footer */
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    padding-top: 10px;
+    background-color: rgb(47, 47, 47);
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Formulario de contacto */
+.contact_form{	
+	width: 440px; 
+  	height: auto;
+  	margin: 80px auto;
+	border-radius: 10px;
+	padding-bottom: 20px;  
+  	background-color: #fff; 
+  	padding-left: 10px;
+	margin-top: 40px;
+}
+
+/*Input Formulario de contacto*/
+input{
+	background-color: #f2f2f2; 
+	width: 408px; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #5252b4; 
+	margin-top: 10px;  
+	padding-left: 10px;
+ 	margin-bottom: 20px; 
+}
+
+/*Area de texto Formulario de contacto*/
+textarea{
+  	background-color: #f2f2f2; 
+	width: 405px; 
+	height: 150px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #5252b4; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  	margin-bottom: 20px; 
+  	padding-top: 15px; 
+}
+
+/*Label Formulario de contacto */
+label{
+  display: block; 
+	float: center; 	
+}
+
+/*Boton Formulario de contacto */
+button{
+	height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	text-transform: uppercase;
+	background-color: #5252b4; 
+	border-color: #5252b4; 
+	border-style: solid; 
+	border-radius: 10px;	
+	width: 410px;   
+  	cursor: pointer;
+}
+
+/*Etiquta p del Boton de Formulario de contacto*/
+button p{
+	color: #fff; 
+}
+
+/*Moluse sobre boton del Formulario de contacto*/
+button:hover{
+	opacity: 0.8;
+}
+
+/* Eiqueta span*/
+span{
+	color: #5252b4; 
+}
+
+/* Etiqueta h2 */
+h2{
+	text-align: letf; 
+	padding-bottom: 20px; 
+	color: #5252b4;
+}
+
+/* Fondo input Formulario de contacto */
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+/* Fondo textarea Formulario de contacto */
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+/* Noticias */
+/* Titulo */
+.titulo {
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #000;
+}
+
+/* Tarjeta de Noticias */
+.tarjeta {
+  max-width: 65vw;
+  margin: 48px auto;
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: justify;
+  transition: all 400ms ease-out;
+}
+
+/*Efecto Tarjeta de Noticia*/
+.tarjeta:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+
+/*Contenido Tarjeta de Noticia*/
+.contenido {
+  display: flex;
+}
+
+/*Resolución Tarjeta de Noticia*/
+@media (max-width: 1024px){
+  .contenido{
+  flex-direction: column;
+  }
+  .tarjeta {
+   max-width: 95vw;
+  }
+}
+
+/*Tamaño Tarjeta de Noticia*/
+.ladoIzq, .ladoDer {
+  width: 100%;
+}
+
+/* Imagen Tarjeta de Noticia*/
+.ladoDer img {
+  width: 100%;
+  height: 100%;
+  border-style: none;
+}
+
+/* Contenido Tarjeta de Noticia */
+.ladoIzq {
+  background: rgb(245, 245, 245);
+  color: rgb(0, 0, 0);
+  padding: 48px
+}
+
+/* Boton Tarjeta de Noticia */
+.btn {
+  display: inline-block;
+  background: white;
+  margin-right: 4px;
+  padding: 14px;
+  border-radius: 5px;
+  margin-top: 18px;
+}
+
+/*Quitar decoración de boton en Tarjeta de Noticia*/
+a.btn{
+   text-decoration: none;
+}
+
+/* Color Boton Tarjeta de Noticia */
+a.btn:first-of-type {
+   background: #5252b4;
+   color: white;
+}
+
+/* Mouse sobre boton Tarjeta de Noticia*/
+a.btn:hover{
+   opacity: 0.8;
+}
+
+/*Contenido Video  */
+.cont-video {
+	margin-left: 10%; 
+	margin-right: 10%; 
+	text-align: justify;
+	align-items: center;
+}
+
+/* Tamaño Etiqueta video*/
+video{
+	width:100%;
+}
+
+/* Galeria de imagenes de Categorías */
+.galeria{
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+}
+
+/*Imagenes Galeria de imagenes de Categorías*/
+.galeria-img{
+	width: 350px;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 20px;
+	opacity: 0.9;
+	background-size: cover;
+	height: 350px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: all 400ms ease-out;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+}
+
+/*Efecto Galeria de imagenes de Categorías */
+.galeria-img:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+
+/*Etiqueta h1 en Galeria de imagenes de Categorías */
+.galeria-img h1 {
+	font-size: 40px;
+	color: #fff;
+	-webkit-text-stroke: 1px black;
+}
+
+/*Quitar decoración de link en Galeria de imagenes de Categorías */
+.galeria a {
+	text-decoration: none;
+}

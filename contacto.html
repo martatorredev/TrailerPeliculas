@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Título -->
+        <title>Inicio</title>
+        <!-- Hoja de Estilos -->
+        <link rel="stylesheet" href="./css/estilos.css">
+    </head>
+    <body>
+
+        <!-- Menu -->
+        <header>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="categorias.html">Categorías</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li class="activo"><a href="contacto.html">Contacto</a></li> <!--Link Activo -->
+                </ul>
+            </div>
+        </header>
+
+        <!-- Encabezado -->
+        <div class="encabezado-img" style="background-image: url(./img/contacto.jpeg);">
+         <!-- Sin Contenido -->
+        </div>
+
+        <!-- formulario de contacto en html y css -->
+	    <div class="contact_form">
+
+            <!-- Titulo -->
+            <h2>Formulario de contacto</h2>
+
+            <!-- Formulario -->
+            <form action="submeter-formulario.php" method="post">
+                <!--Input Nombre -->		
+                <p>
+                    <label for="nombre" class="colocar_nombre">Nombre
+                        <span class="obligatorio">*</span>
+                    </label>
+                        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                </p>
+                <!--Input Email -->
+                <p>
+                    <label for="email" class="colocar_email">Email
+                        <span class="obligatorio">*</span>
+                    </label>
+                        <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                </p>
+                <!--Input Asunto -->
+                <p>
+                    <label for="asunto" class="colocar_asunto">Asunto
+                        <span class="obligatorio">*</span>
+                    </label>
+                        <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                </p>		
+                <!--Input Mensaje -->
+                <p>
+                    <label for="mensaje" class="colocar_mensaje">Mensaje
+                        <span class="obligatorio">*</span>
+                    </label>                     
+                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                </p>	  								
+                
+                <!-- Boton -->
+                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>				
+                        
+            </form>	
+	    </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>Todos los derechos reservados 2022 ® Marta Torre.</p>
+        </footer>
+        
+    </body>
+</html>
